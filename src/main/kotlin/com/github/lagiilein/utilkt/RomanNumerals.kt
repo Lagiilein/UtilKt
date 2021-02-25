@@ -35,6 +35,14 @@ object RomanNumerals {
             orderedRomanNumbers.forEachIndexed { i, it ->
                 if (found) return@forEachIndexed
 
+                if (i > 0 && temp == orderedRomanNumbers[i - 1].intValue - it.intValue) {
+                    result.append("${it.char}${orderedRomanNumbers[i - 1].char}")
+                    temp = temp.minus(orderedRomanNumbers[i - 1].intValue - it.intValue)
+                    found = true
+
+                    return@forEachIndexed
+                }
+
                 if (
                     i > 0 &&
                     i + 1 < orderedRomanNumbers.size &&

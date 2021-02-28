@@ -7,14 +7,16 @@
  */
 
 plugins {
+    java
     `java-library`
     `java-library-distribution`
     `maven-publish`
     kotlin("jvm") version "1.4.30"
+    id("org.jetbrains.dokka") version "1.4.20"
 }
 
 group = "com.github.lagiilein"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -61,5 +63,25 @@ publishing {
             }
         }
     }
+}
+
+tasks.dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            moduleName.set("UtilKt")
+            sourceLink {
+                localDirectory.set(file("src/main/kotlin"))
+                remoteUrl.set(uri("https://github.com/lagiilein/utilkt/blob/master/src/main/kotlin").toURL())
+                remoteLineSuffix.set("#L")
+            }
+
+            jdkVersion.set(11)
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 

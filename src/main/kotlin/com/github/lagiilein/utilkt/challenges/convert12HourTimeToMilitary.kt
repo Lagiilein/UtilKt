@@ -1,7 +1,7 @@
 package com.github.lagiilein.utilkt.challenges
 
 /**
- * https://www.hackerrank.com/challenges/time-conversion
+ * [https://www.hackerrank.com/challenges/time-conversion]
  */
 fun convert12HourTimeToMilitary(s: String): String {
     val out = StringBuilder()

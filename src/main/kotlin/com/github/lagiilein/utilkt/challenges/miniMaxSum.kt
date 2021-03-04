@@ -1,7 +1,7 @@
 package com.github.lagiilein.utilkt.challenges
 
 /**
- * https://www.hackerrank.com/challenges/mini-max-sum
+ * [https://www.hackerrank.com/challenges/mini-max-sum]
  */
 fun miniMaxSum(arr: Array<Int>) {
     var min = Long.MAX_VALUE

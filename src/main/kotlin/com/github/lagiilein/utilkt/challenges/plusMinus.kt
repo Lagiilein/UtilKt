@@ -1,7 +1,7 @@
 package com.github.lagiilein.utilkt.challenges
 
 /**
- * https://www.hackerrank.com/challenges/plus-minus
+ * [https://www.hackerrank.com/challenges/plus-minus]
  */
 fun plusMinus(arr: Array<Int>) {
     var positiveAmount = 0

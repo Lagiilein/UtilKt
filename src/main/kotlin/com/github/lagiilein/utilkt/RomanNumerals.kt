@@ -30,7 +30,6 @@ object RomanNumerals {
         val result = StringBuilder()
 
         while (temp > 0) {
-            println("int: $int; temp: $temp; previous result: $result")
             var found = false
             orderedRomanNumbers.forEachIndexed { i, it ->
                 if (found) return@forEachIndexed
@@ -64,8 +63,6 @@ object RomanNumerals {
                 }
             }
         }
-
-        println("final result: $result")
 
         return result.toString()
     }

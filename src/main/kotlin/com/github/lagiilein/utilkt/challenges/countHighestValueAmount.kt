@@ -1,7 +1,7 @@
 package com.github.lagiilein.utilkt.challenges
 
 /**
- * https://www.hackerrank.com/challenges/birthday-cake-candles
+ * [https://www.hackerrank.com/challenges/birthday-cake-candles]
  */
 fun countHighestValueAmount(candles: Array<Int>): Int {
     var amount = 0

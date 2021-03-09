@@ -19,6 +19,7 @@ internal class IsInRangeInclusiveTest {
     @Test
     fun `test is in range inclusive double`() {
         Assertions.assertFalse(50.toDouble().isInRangeInclusive(Double.MIN_VALUE, 49.99))
+        Assertions.assertFalse(50.01.isInRangeInclusive((-5).toDouble(), 50.toDouble()))
         Assertions.assertTrue(50.toDouble().isInRangeInclusive(Double.MIN_VALUE, 50.00))
         Assertions.assertTrue(50.toDouble().isInRangeInclusive(50.00, 50.00))
         Assertions.assertTrue(2.00.isInRangeInclusive(Double.MAX_VALUE, Double.MIN_VALUE))

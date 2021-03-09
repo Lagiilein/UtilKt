@@ -67,7 +67,7 @@ import com.github.lagiilein.utilkt.number.isInRangeInclusive
 
 fun main() {
     50.isInRangeInclusive(-5, 50) // true
-    50.01.isInRangeInclusive(-5, 50) // false
+    50.01.isInRangeInclusive((-5).toDouble(), 50.toDouble()) // false
 }
 ```
 

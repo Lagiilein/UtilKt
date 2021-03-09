@@ -2,8 +2,8 @@
 
 A kotlin library, which contains some utility functionalities.
 
-> Note: It's not meant be a real library.
-It's more like a test / example library to play around with publishing artifacts using Gradle.
+> :warning: **It's not meant be a real library:**
+> It's more like a test / example library to play around with publishing artifacts using Gradle.
 
 ## Usage
 

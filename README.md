@@ -44,6 +44,33 @@ fun func() {
 }
 ```
 
+### Numbers
+
+#### IsInRangeInclusive
+
+```java
+// java
+
+import com.github.lagiilein.utilkt.number.IsInRangeInclusiveKt;
+
+public class App {
+    public static void main() {
+        IsInRangeInclusiveKt.isInRangeInclusive(0, -1, 1);
+    }
+}
+```
+
+```kotlin
+// kotlin
+
+import com.github.lagiilein.utilkt.number.isInRangeInclusive
+
+fun main() {
+    50.isInRangeInclusive(-5, 50) // true
+    50.01.isInRangeInclusive(-5, 50) // false
+}
+```
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.

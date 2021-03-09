@@ -11,12 +11,12 @@ plugins {
     `java-library`
     `java-library-distribution`
     `maven-publish`
-    kotlin("jvm") version "1.4.30"
+    kotlin("jvm") version "1.4.31"
     id("org.jetbrains.dokka") version "1.4.20"
 }
 
 group = "com.github.lagiilein"
-version = "1.1.2"
+version = "1.2.0"
 
 repositories {
     mavenCentral()
@@ -42,6 +42,7 @@ tasks.test {
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
+    kotlinOptions.useIR = true
 }
 
 publishing {
